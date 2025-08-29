@@ -1,128 +1,130 @@
 body {
-    font-family: "Pretendard", "Noto Sans KR", sans-serif;
-    margin: 0;
-    padding: 20px;
-    background: #f9fafb;
-    color: #333;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f9fafb;
+  color: #333;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
 }
 
 .todo-list {
-    max-width: 500px;
-    margin: 0 auto;
-    background: white;
-    border: 1px solid #1791dd;
-    border-radius: 6px;
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #1791dd;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .task {
-    padding: 12px;
-    margin: 8px 0;
-    background: #f1f5f9;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    cursor: grab;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.3s ease, transform 0.2s ease;
+  padding: 12px;
+  margin: 8px 0;
+  background: #f1f5f9;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .task:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 .task:hover {
-    background: #e0f2fe;
-    transform: scale(1.02);
+  background: #e0f2fe;
+  transform: scale(1.02);
 }
 
 .delete-btn {
-    background: transparent;
-    border: none;
-    color: #e11d48;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
+  background: transparent;
+  border: none;
+  color: #e11d48;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .delete-btn:hover {
-    color: #b91c1c;
+  color: #b91c1c;
 }
 
 /* 드래그 오버 시 강조 */
 .drag-over {
-    border: 2px dashed #1791dd;
-    background: #fefce8;
+  border: 2px dashed #1791dd;
+  background: #fefce8;
 }
 
 /* 추가 버튼 */
 .add-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    background: #1791dd;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #1791dd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .add-btn:hover {
-    background: #0c4a6e;
+  background: #0c4a6e;
 }
 
 /* 모달 스타일 */
 .modal {
-    display: none;
-    /* 처음엔 숨김 */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+  display: none;
+  /* 처음엔 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .modal-content input {
-    width: 90%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
 .modal-content button {
-    margin: 5px;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .save-btn {
-    background: #1791dd;
-    color: white;
+  background: #1791dd;
+  color: white;
 }
 
 .close-btn {
-    background: #ddd;
+  background: #ddd;
 }
